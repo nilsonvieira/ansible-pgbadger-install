@@ -1,0 +1,5 @@
+- name: Playbook Local
+  hosts: local
+  roles:
+    - pgbadger
+
