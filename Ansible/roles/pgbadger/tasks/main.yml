@@ -1,28 +1,28 @@
-- name: Copia PgBadger Gerente
-  copy:
-    src:  /home/nilson/Documentos/Workspace/Pulse/pgbadger/Homo/{{ item }}
-    dest: /opt/scripts/
-    owner: nilson
-    group: nilson
-    mode: '0755'
-  with_items:
-    - theTester.sh
-    - gerente.sh
+# - name: Copia PgBadger Gerente
+#   copy:
+#     src:  /home/nilson/Documentos/Workspace/Pulse/pgbadger/Homo/{{ item }}
+#     dest: /opt/scripts/
+#     owner: nilson
+#     group: nilson
+#     mode: '0755'
+#   with_items:
+#     - theTester.sh
+#     - gerente.sh
 
-- name: Copia PgBadger pgbadger01
-  copy:
-    src:  /home/nilson/Documentos/Workspace/Pulse/pgbadger/Homo/scripts-pg01/{{ item }}
-    dest: /opt/scripts/scripts-pg01/
-    owner: nilson
-    group: nilson
-    mode: '0755'
-  with_items:
-    - gerarrelatorio-deb36.sh
-    - gerarrelatorio-deb192.sh
+# - name: Copia PgBadger pgbadger01
+#   copy:
+#     src:  /home/nilson/Documentos/Workspace/Pulse/pgbadger/Homo/scripts-pg01/{{ item }}
+#     dest: /opt/scripts/scripts-pg01/
+#     owner: nilson
+#     group: nilson
+#     mode: '0755'
+#   with_items:
+#     - gerarrelatorio-deb36.sh
+#     - gerarrelatorio-deb192.sh
 
 - name: Copia Teste Pgbadger
   copy:
-    src: /home/nilson/Documentos/Workspace/MISC/{{ item }}
+    src: /home/nilson/Documentos/Workspace/GitHub/MISC/{{ item }}
     dest: /opt/scripts/
     owner: nilson
     group: nilson
